@@ -1,0 +1,19 @@
+{
+  "name": "webcompproj",
+  "version": "0.0.0",
+  "description": "web component project",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axavierj/webcomponet.git"
+  },
+  "author": "alexander jimenez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/axavierj/webcomponet/issues"
+  },
+  "homepage": "https://github.com/axavierj/webcomponet#readme"
+}
