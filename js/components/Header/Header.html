@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="/style/reset.css">
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700,900&display=swap" rel="stylesheet">
+
+<header>
+    <div class="header__left">
+        <slot name="left">side_1</slot>
+    </div>
+    <div class="header__right">
+        <slot name="right">side_2</slot>
+    </div>
+    <slot name="nav__bar"></slot>
+</header>
+<style>
+    :host{
+        font-family: 'Nunito Sans', sans-serif;
+        box-sizing: border-box;
+        background-color: #42a5f5;
+        color: #fafafa;
+        margin-bottom: 1.5rem;
+        box-shadow: .2rem .2rem .5rem lightslategray;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .header__right, .header__left{
+        padding: 1rem;
+        max-height: 20%;
+    }
+</style>
