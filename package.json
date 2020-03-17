@@ -4,7 +4,8 @@
   "description": "web component project",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "parcel serve index.html --port 3000 --open"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/axavierj/webcomponet/issues"
   },
-  "homepage": "https://github.com/axavierj/webcomponet#readme"
+  "homepage": "https://github.com/axavierj/webcomponet#readme",
+  "devDependencies": {
+    "jest": "^25.1.0",
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "@vaadin/router": "^1.7.1"
+  }
 }
