@@ -2,13 +2,17 @@
 <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700,900&display=swap" rel="stylesheet">
 
 <header>
-    <div class="header__left">
-        <slot name="left">side_1</slot>
-    </div>
-    <div class="header__right">
-        <slot name="right">side_2</slot>
-    </div>
-    <slot name="nav__bar"></slot>
+    <section class="header__content">
+        <div class="header__left">
+            <slot name="left">side_1</slot>
+        </div>
+        <div class="header__right">
+            <slot name="right">side_2</slot>
+        </div>
+    </section>
+    <section class="header__navbar">
+        <slot name="nav__bar"></slot>
+    </section>
 </header>
 <style>
     :host{
@@ -20,10 +24,12 @@
         box-shadow: .2rem .2rem .5rem lightslategray;
     }
 
-    header{
+    .header__content{
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
+
     .header__right, .header__left{
         padding: 1rem;
         max-height: 20%;

@@ -7,7 +7,7 @@ html, body{
 }
 
 body{
-    background-image: linear-gradient(to bottom, #fe8138, #42a1ff8e);
+    background-color: rgb(240, 251, 255);
 }
 
 #outlet{
