@@ -1,5 +1,7 @@
 const routes = [
-    {path: '/',     component: 'main-app'}
+    {path: '/',     component: 'main-app', children:[
+        {path:"/", component:"app-home"}
+    ]}
 ]
 
 export default routes
