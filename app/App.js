@@ -1,6 +1,9 @@
 import apptemplate from "./App.html";
+
 const app = document.createElement("template");
+
 app.innerHTML = apptemplate;
+
 export class App extends HTMLElement {
   constructor() {
     super();
