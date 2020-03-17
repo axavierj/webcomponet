@@ -5,3 +5,12 @@
 html, body{
     height: 100vh;
 }
+
+body{
+    background-image: linear-gradient(to bottom, #fe8138, #42a1ff8e);
+}
+
+#outlet{
+    height: 100%;
+}
+

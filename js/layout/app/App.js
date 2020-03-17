@@ -10,6 +10,9 @@ export class App extends HTMLElement {
     this.root = this.attachShadow({ mode: "open" });
     this.root.appendChild(app.content.cloneNode(true));
   }
-  connectedCallback() {}
+  connectedCallback() {
+    
+    
+  }
 }
 customElements.define("main-app", App);
