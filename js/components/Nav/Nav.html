@@ -25,7 +25,8 @@
     flex-wrap: wrap;
   }
   .mobil__menu {
-    /* display: none; */
+    display: none;
+    cursor: pointer;
   }
 
   .mobil__menu::before {
@@ -64,11 +65,18 @@
     transform: scaleX(1);
   }
   @media only screen and (max-width: 1080px) {
-    li {
+    nav {
+      min-width: 10vw;
+    }
+    ul {
+      display: grid;
+    }
+    .nav__links {
       display: none;
     }
     .mobil__menu {
       display: initial;
+      align-self: flex-end;
     }
   }
 </style>
