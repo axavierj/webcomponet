@@ -11,7 +11,9 @@ export class Header extends HTMLElement {
     this.root.appendChild(header.content.cloneNode(true));
   }
   connectedCallback() {
+    this.root.addEventListener('openMenu', () => console.log("got it"))
   }
+
   //getters
   get color() {
     return this.getAttribute('color');
