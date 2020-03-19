@@ -1,9 +1,74 @@
-<link rel="stylesheet" href="/style/reset.css">
-<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700,900&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="/style/reset.css" />
+<link
+  href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700,900&display=swap"
+  rel="stylesheet"
+/>
+<nav>
+  <ul>
+    <li class="mobil__menu"></li>
+    <li class="nav__links">1</li>
+    <li class="nav__links">2</li>
+    <li class="nav__links">3</li>
+    <li class="nav__links">4</li>
+    <li class="nav__links">5</li>
+  </ul>
+</nav>
 
 <style>
-      :host{
-        font-family: 'Nunito Sans', sans-serif;
+  :host {
+    font-family: "Nunito Sans", sans-serif;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .mobil__menu {
+    /* display: none; */
+  }
+
+  .mobil__menu::before {
+    content: "\2630";
+    color: white;
+  }
+
+  nav {
+    min-width: 30vw;
+  }
+
+  .nav__links {
+    transition: filter 200ms ease-in-out;
+    position: relative;
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+
+  .nav__links:hover {
+    filter: brightness(70%);
+  }
+
+  .nav__links::after {
+    content: "";
+    position: absolute;
+    height: 0.1rem;
+    width: 100%;
+    background-color: white;
+    bottom: -1.2px;
+    left: 0;
+    transform: scaleX(0);
+    transition: all 225ms ease-in-out 190ms;
+  }
+
+  .nav__links:hover::after {
+    transform: scaleX(1);
+  }
+  @media only screen and (max-width: 1080px) {
+    li {
+      display: none;
     }
+    .mobil__menu {
+      display: initial;
+    }
+  }
 </style>

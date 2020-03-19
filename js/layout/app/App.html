@@ -1,21 +1,26 @@
-<link rel="stylesheet" href="/style/reset.css">
-<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style/reset.css" />
+<link
+  href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700,900&display=swap"
+  rel="stylesheet"
+/>
 <main>
-    <app-header>
-       
-    </app-header>
-    <div class="main__body">
-        <slot></slot>  
+  <app-header>
+    <div slot="right">
+      <nav-bar navItems="home contact about help portfolio"></nav-bar>
     </div>
-    <footer></footer>
+  </app-header>
+  <div class="main__body">
+    <slot></slot>
+  </div>
+  <footer></footer>
 </main>
 <style>
-    :host{
-        font-family: 'Nunito Sans', sans-serif;
-    }
-    main{
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-    }
+  :host {
+    font-family: "Nunito Sans", sans-serif;
+  }
+  main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 </style>
